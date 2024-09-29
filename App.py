@@ -22,7 +22,7 @@ db = Conexao()
 def Cadastro_User():
     if db is not None:
         cursor = db.cursor()
-        sql = "INSERT INTO users (nome, data, sexo) VALUES (%s, %s,  %s)"
+        sql = "INSERT INTO usuarios (nome, data, sexo) VALUES (%s, %s,  %s)"
         if option_sexo.get() == "Masculino":
             valores = (digitNome.get(), digitData.get(), "M")
         if option_sexo.get() == "Feminino":
