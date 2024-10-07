@@ -32,6 +32,11 @@
 </div>
 </div>
 
+<h1 align="center"> Interface do Software</h1>
+
+<div align="center">
+  <img height="350px" src="final.png">
+</div>
 
 <h1 align="center"> Contact </h1>
 
