@@ -53,7 +53,7 @@ App = CTk()
 
 #Config do App
 App._set_appearance_mode("light")
-App.title("Cadastro")
+App.title("Register")
 App.geometry("300x360")
 App.resizable(False, False)
 App.iconbitmap("icon.ico")
@@ -71,33 +71,33 @@ def CentralizaWindow():
 CentralizaWindow()
 
 #Titulo
-Title = CTkLabel(App, text="Cadastrar Usuário", text_color="black", font=("Arial", 20), bg_color="#EBEBEB")
+Title = CTkLabel(App, text="Register User", text_color="black", font=("Arial", 20), bg_color="#EBEBEB")
 Title.pack(pady=10)
 
 #Nome
 Name = CTkLabel(App, text="Nome:", text_color="black", font=("Arial", 15), bg_color="#EBEBEB", justify="right")
 Name.pack(padx=(0, 5), pady=(10, 0))
 
-digitNome = CTkEntry(App, width=200, bg_color="#EBEBEB",fg_color="#ffffff", placeholder_text="Digite Aqui",text_color="black",corner_radius=100)
+digitNome = CTkEntry(App, width=200, bg_color="#EBEBEB",fg_color="#ffffff", placeholder_text="Type Here",text_color="black",corner_radius=100)
 digitNome.pack(pady=5)
 
 
 #Data de Nascimento
-DataNasc = CTkLabel(App, text="Data de Nascimento:", text_color="black", font=("Arial", 15), bg_color="#EBEBEB", justify="right")
+DataNasc = CTkLabel(App, text="Date of birth:", text_color="black", font=("Arial", 15), bg_color="#EBEBEB", justify="right")
 DataNasc.pack(padx=(0, 5), pady=(10, 0))
 
 digitData = CTkEntry(App, width=200,placeholder_text="YYYY-MM-DD",bg_color="#EBEBEB", fg_color="#ffffff",text_color="black",corner_radius=100)
 digitData.pack(pady=5)
 
 #Sexo
-Sexo = CTkLabel(App, text="Sexo:", text_color="black", font=("Arial", 15), bg_color="#EBEBEB", justify="right")
+Sexo = CTkLabel(App, text="Sex:", text_color="black", font=("Arial", 15), bg_color="#EBEBEB", justify="right")
 Sexo.pack(padx=(0, 5), pady=(10, 0))
 
-option_sexo = CTkOptionMenu(App, values=["Masculino", "Feminino"],bg_color="#EBEBEB")
+option_sexo = CTkOptionMenu(App, values=["Masculine", "Feminine"],bg_color="#EBEBEB")
 option_sexo.pack(pady=5)
 
 #Botão
-btn_cadastrar = CTkButton(App, text="Cadastrar",font=("Arial",17), command=Cadastro_User,height=40,width=100,bg_color="#EBEBEB")
+btn_cadastrar = CTkButton(App, text="Register",font=("Arial",17), command=Cadastro_User,height=40,width=100,bg_color="#EBEBEB")
 btn_cadastrar.pack(pady=20)
 
 App.mainloop()
